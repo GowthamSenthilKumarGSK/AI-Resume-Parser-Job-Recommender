@@ -34,3 +34,26 @@ This project is an intelligent job recommendation system that parses uploaded re
 - **Sentence Transformers** – Text Embeddings  
 - **Pinecone** – Vector Search  
 - **Jooble API** – Real-Time Job Listings
+
+---
+
+## 📁 Project Structure
+
+📦 Job Recommendation System
+├── app.py # Streamlit frontend for uploading resumes and showing results
+├── pdf_parser.py # Extracts text content from uploaded PDF resumes
+├── image_parser.py # (Optional) Extracts text from resume images using OCR
+├── caching.py # Caching utilities to improve performance
+├── jooble_api_tester.py # Standalone script to test Jooble API responses
+├── JOB.py # Manages job data representation and parsing
+├── RAG.py # Retrieval-Augmented Generation logic (if chatbot enabled)
+├── preprocess_jobs.py # Cleans and preprocesses job listings
+├── store_jobs_Pinecone.py # Embeds and stores job descriptions in Pinecone vector DB
+├── querying_jobs.py # Performs similarity search for resume-job matching
+├── query_test.py # Script to test job similarity queries
+├── requirements.txt # Python dependencies
+├── README.md # Project documentation
+├── resume.jpg # Sample input resume image
+└── .gitignore # Files/folders to exclude from version control
+
+---
