@@ -14,3 +14,23 @@ This project is an intelligent job recommendation system that parses uploaded re
 - 💻 Streamlit interface for seamless user interaction
 
 ---
+
+## 🧪 How It Works
+
+- **Upload Resumes:** Upload one or more PDF resumes via the Streamlit interface.
+- **Skill Extraction:** NLP engine extracts organizations, locations, and tools from resumes.
+- **Job Fetching:** Real-time job postings are pulled via Jooble API.
+- **Job Embedding:** Descriptions are embedded using sentence-transformers.
+- **Matching:** Pinecone performs similarity search between resume and job vectors.
+- **Output:** Top-k job recommendations are displayed.
+
+---
+
+## 📌 Tech Stack
+
+- **Python**
+- **Streamlit** – Web Interface  
+- **spaCy** – NLP Skill Extraction  
+- **Sentence Transformers** – Text Embeddings  
+- **Pinecone** – Vector Search  
+- **Jooble API** – Real-Time Job Listings
