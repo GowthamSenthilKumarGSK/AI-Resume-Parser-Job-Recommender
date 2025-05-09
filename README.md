@@ -55,5 +55,3 @@ This project is an intelligent job recommendation system that parses uploaded re
 ├── README.md # Project documentation
 ├── resume.jpg # Sample input resume image
 └── .gitignore # Files/folders to exclude from version control
-
----
