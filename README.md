@@ -39,35 +39,23 @@ This project is an intelligent job recommendation system that parses uploaded re
 
 ## 📁 Project Structure
 
-#📦 Job Recommendation System
-├── app.py # Streamlit frontend for uploading resumes and showing results
+| File / Folder            | Purpose                                                                 |
+|--------------------------|-------------------------------------------------------------------------|
+| `app.py`                 | Main Streamlit app to handle user input, file uploads, and UI rendering.|
+| `pdf_parser.py`          | Extracts relevant text from uploaded PDF resumes.                       |
+| `image_parser.py`        | (If used) Parses resume images (optional – useful for OCR workflows).   |
+| `caching.py`             | Handles data caching to improve performance and avoid redundant API calls.|
+| `jooble_api_tester.py`   | Testing script to validate Jooble API responses.                        |
+| `JOB.py`                 | Logic for formatting or managing job data.                              |
+| `RAG.py`                 | Contains logic for RAG-based embeddings or chat integration (if used).  |
+| `preprocess_jobs.py`     | Prepares job descriptions for embedding and storage.                    |
+| `store_jobs_Pinecone.py` | Stores job vectors in Pinecone for similarity search.                   |
+| `querying_jobs.py`       | Queries Pinecone to fetch similar jobs based on resume vector.          |
+| `query_test.py`          | Script to test the job querying and matching pipeline.                  |
+| `requirements.txt`       | Lists all Python dependencies for setting up the environment.           |
+| `README.md`              | Project documentation.                                                  |
+| `resume.jpg`             | Example image file (for demo or testing image parser).                  |
+| `.gitignore`             | Specifies files/folders to be ignored by Git.                           |
 
-├── pdf_parser.py # Extracts text content from uploaded PDF resumes
-
-├── image_parser.py # (Optional) Extracts text from resume images using OCR
-
-├── caching.py # Caching utilities to improve performance
-
-├── jooble_api_tester.py # Standalone script to test Jooble API responses
-
-├── JOB.py # Manages job data representation and parsing
-
-├── RAG.py # Retrieval-Augmented Generation logic (if chatbot enabled)
-
-├── preprocess_jobs.py # Cleans and preprocesses job listings
-
-├── store_jobs_Pinecone.py # Embeds and stores job descriptions in Pinecone vector DB
-
-├── querying_jobs.py # Performs similarity search for resume-job matching
-
-├── query_test.py # Script to test job similarity queries
-
-├── requirements.txt # Python dependencies
-
-├── README.md # Project documentation
-
-├── resume.jpg # Sample input resume image
-
-└── .gitignore # Files/folders to exclude from version control
 
 ---
